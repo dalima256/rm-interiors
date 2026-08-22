@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RM Interiors | Interior Design</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f2ed;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #151515;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.tagline {
+    color: #d4af37;
+    margin-top: 8px;
+}
+
+nav {
+    background: #222;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: #e7dfd4;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background: #d4af37;
+    color: #111;
+    text-decoration: none;
+    padding: 13px 25px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #b8941f;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 65px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.about {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.service h3 {
+    color: #9b7a16;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+.contact {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact p {
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.contact p a {
+    color: #b8860b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social {
+    margin-top: 25px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 6px;
+    padding: 10px 18px;
+    color: white;
+    background: #222;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background: #b8860b;
+    transform: translateY(-2px);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background: #25D366;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #151515;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RM INTERIORS</div>
+    <div class="tagline">Creating Spaces. Inspiring Living.</div>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">My Work</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h1>RM INTERIORS</h1>
+    <p>Professional Interior Design & Interior Finishing</p>
+
+    <a href="#work" class="button">View My Work</a>
+    <a href="#contact" class="button">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About RM Interiors</h2>
+
+    <div class="about">
+        <p>
+            Welcome to RM Interiors, a creative interior design brand
+            dedicated to transforming ordinary spaces into beautiful,
+            comfortable and functional environments.
+        </p>
+
+        <br>
+
+        <p>
+            Founded by <strong>Ronald Mugera</strong>, RM Interiors provides
+            professional interior design and finishing solutions with
+            creativity, attention to detail and quality workmanship.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>Interior Design</h3>
+            <p>Creative designs for homes, offices and commercial spaces.</p>
+        </div>
+
+        <div class="service">
+            <h3>Space Planning</h3>
+            <p>Smart arrangements that improve comfort and functionality.</p>
+        </div>
+
+        <div class="service">
+            <h3>Interior Finishing</h3>
+            <p>Quality finishing solutions that transform your space.</p>
+        </div>
+
+        <div class="service">
+            <h3>Home & Office Décor</h3>
+            <p>Stylish décor solutions designed around your space.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="work">
+    <h2>Our Work</h2>
+
+    <div class="gallery">
+
+        <img src="images/121210684_2969741189795091_5755229980536872646_n.jpg" alt="RM Interiors project">
+
+        <img src="images/20240908_082041.jpg" alt="RM Interiors project">
+
+        <img src="images/20240908_082041_1787322448511.jpg" alt="RM Interiors project">
+
+        <img src="images/20241024_121233_1787322448537.jpg" alt="RM Interiors project">
+
+        <img src="images/20250724_070348.jpg" alt="RM Interiors project">
+
+        <img src="images/20250724_234347.jpg" alt="RM Interiors project">
+
+        <img src="images/20250724_234349.jpg" alt="RM Interiors project">
+
+        <img src="images/3b5857fbfd48366fc4fb02d7f37ef088.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20221113-WA0001.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20240102-WA0921.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20240102-WA0923.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250514-WA0039.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250514-WA0040.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250526-WA0189.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250808-WA0007.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250808-WA0008.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250808-WA0015.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250815-WA0037.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250905-WA0224.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250905-WA0294.jpg" alt="RM Interiors project">
+
+        <img src="images/IMG-20250915-WA0029~2.jpg" alt="RM Interiors project">
+
+        <img src="images/Screenshot_20250511-222111_Gallery.jpg" alt="RM Interiors project">
+
+        <img src="images/Screenshot_20250609-180452.jpg" alt="RM Interiors project">
+
+        <img src="images/Screenshot_20250609-180557.jpg" alt="RM Interiors project">
+
+        <img src="images/Screenshot_20250611-063832.jpg" alt="RM Interiors project">
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact RM Interiors</h2>
+
+    <div class="contact">
+
+        <p><strong>Phone:</strong> +256 708 830 918</p>
+
+        <p>
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/256767420580" target="_blank">
+                +256 767 420 580
+            </a>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:ronaldmugera177@gmail.com">
+                ronaldmugera177@gmail.com
+            </a>
+        </p>
+
+        <div class="social">
+
+            <a href="https://www.instagram.com/ronald_m_22/" target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://x.com/ronaldmugera177" target="_blank">
+                X
+            </a>
+
+            <a href="https://www.linkedin.com/in/mugera-ronald-689b38249" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+        <br>
+
+        <a href="https://wa.me/256708830918" class="button" target="_blank">
+            Chat on WhatsApp
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 RM Interiors. All Rights Reserved.</p>
+    <p>By Ronald Mugera</p>
+</footer>
+
+</body>
+</html>
