@@ -168,8 +168,46 @@ h2 {
     color: #b8860b;
     text-decoration: none;
     font-weight: bold;
+}.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 25px 0;
 }
 
+.action {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.action:hover {
+    transform: translateY(-3px);
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.call {
+    background: #222;
+}
+
+.email {
+    background: #b8860b;
+}
+
+@media (max-width: 600px) {
+    .action {
+        width: 100%;
+        max-width: 280px;
+    }
+}
 .social {
     margin-top: 25px;
 }
