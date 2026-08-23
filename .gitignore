@@ -2,7 +2,8 @@
 contact-sheet.jpg
 index-before-hero.html
 index-before-polish.html
-index-live-backup.htmlall-photos.txt
+all-photos.txt
+index-live-backup.htmlindex-live-backup.htmlall-photos.txt
 # Extra phone media not used by the website
 images/*.heif
 images/*.heic
