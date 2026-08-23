@@ -1,5 +1,13 @@
 all-photos.txt
-contact-sheet.jpg
+# Extra phone media not used by the website
+images/*.heif
+images/*.heic
+images/*.mp4
+
+# Phone screenshots and unrelated images
+images/Screenshot_*
+images/AnyScanner_*
+images/Clipped_image_*contact-sheet.jpg
 index-backup.html
 interior-preview.jpg
 make_sheet.py
